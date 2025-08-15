@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+header {
+  box-shadow: 0 0 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 rgba(0, 0, 0, 0);
+}
+
+form{
+    /* border: solid; */
+    width: 100%;
+}
+
+form #innerForm {
+    display: flex;
+    flex-direction: column;
+    border: solid rgba(0, 0, 0, 0.09) 0.1rem; 
+    width: 80%;
+    height: 50%;
+    padding: 3%;
+}
+
+form #innerForm #welcome_message p{
+    /* @apply bg-; */
+    color: rgba(0, 0, 0, 0.388);
+    /* @apply text-[r(0, 0, 0, 0.388)] ; */
+    @apply text-shadow-gray-200
+}
+
+form #innerForm #welcome_message #title {
+    height: 10vh;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+form #innerForm #my_details {
+    display: flex;
+    flex-direction: column;
+    gap: ;
+}
+
+form #innerForm #my_details input{
+    border-radius: 0.5rem; 
+}
+
+form #innerForm #my_details  input[type="password"], form #innerForm #my_details  input[type="text"] {
+    @apply bg-gray-200 w-[100%] h-[5vh] px-[4%];
+}
+
+form #innerForm #my_details  input[type="submit"] {
+    @apply bg-black w-[100%] h-[5vh] px-[4%] hover:bg-gray-700 hover:text-black;
+}
+
+
+form #innerForm #my_details  input[type="submit"]:active {
+        background-color: rgba(0, 0, 0, 0.401);
+}
